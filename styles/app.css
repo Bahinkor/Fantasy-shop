@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    padding: 7rem 0;
+}
+
+body {
+    background-color: #c7cbe4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* header img */
+
+.top {
+    width: 103%;
+    position: relative;
+    bottom: -109px;
+    right: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+/* background */
+
+.content {
+    background-color: #fff;
+    width: 850px;
+    height: 650px;
+    border-radius: 50px;
+    background-image: linear-gradient(90deg, #d57589, #ffc7a3);
+    box-shadow: -77px 30px 105px 23px #b09bd4;
+    padding: 3rem;
+}
+
+/* header text */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.nav-title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ul-text {
+    display: flex;
+    list-style-type: none;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.ul__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    background-color: #ff676e;
+    padding: 10px 20px;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* main (grid) */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    border-radius: 20px 5px 15px 15px;
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.grid-item__img {
+    max-width: 12rem;
+    height: 10rem;
+    transition: all 250ms 250ms;
+    justify-content: center;
+}
+
+.grid-item:hover {
+    .grid-item__img {
+        transform: translateY(-15px);
+    }
+}
+
+.grid > div:nth-child(1) {
+    background-image: linear-gradient(90deg, #ddcfd0, #f9e2d2);
+}
+
+.grid > div:nth-child(2) {
+    background-image: linear-gradient(90deg, #bf92f1, #e4b3fa);
+}
+
+.grid > div:nth-child(3) {
+    background-image: linear-gradient(90deg, #69e7b7, #9fffd6);
+}
+
+.grid > div:nth-child(4) {
+    background-image: linear-gradient(90deg, #febea7, #fdf5d2);
+}
+
+.grid > div:nth-child(5) {
+    background-image: linear-gradient(90deg, #fd556b, #ff8e80);
+}
+
+.grid > div:nth-child(6) {
+    background-image: linear-gradient(90deg, #f89e27, #ffd054);
+}
+
+.grid > div:nth-child(7) {
+    background-image: linear-gradient(90deg, #bf92f1, #e4b3fa);
+}
+
+.grid > div:nth-child(8) {
+    background-image: linear-gradient(90deg, #febea7, #fdf5d2);
+}
+
+.Label {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px #000;
+    padding: 1.3rem 1rem;
+}
